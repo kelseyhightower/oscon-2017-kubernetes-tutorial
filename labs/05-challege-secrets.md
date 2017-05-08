@@ -8,4 +8,4 @@ Perform the following steps:
 
 ## Bonus
 
-* Create a container for your secret and sync a Vault secret every 10 seconds.
+* Create a Kubernetes deployment for your secrets management tool and sync a Vault secret every 10 seconds.
