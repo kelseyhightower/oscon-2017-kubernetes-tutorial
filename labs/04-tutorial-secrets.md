@@ -34,6 +34,18 @@ Run the `secrets` job to fetch the secrets and log the secrets:
 kubectl create -f https://raw.githubusercontent.com/kelseyhightower/secrets/master/secrets.yaml
 ```
 
+```
+kubectl get jobs
+```
+
+```
+kubectl get pods -a
+```
+
+```
+kubectl logs <print-secrets-pod-name>
+```
+
 ## Managing Secrets with Vault
 
 In this tutorial you will deploy a Vault server running in dev mode.
