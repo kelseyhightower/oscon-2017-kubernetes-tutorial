@@ -1,0 +1,42 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: vault
+  name: vault
+spec:
+  clusterIP: None
+  ports:
+    - port: 8200
+      protocol: TCP
+      targetPort: 8200
+  selector:
+    app: vault
+---
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+  name: vault
+spec:
+  serviceName: vault
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vault
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: vault
+          image: vault:0.7.0
+          args:
+            - "server"
+            - "-dev"
+            - "-log-level=debug"
+            - "-dev-root-token-id=3e4a5ba1-oscon-422b-d1db-844979cab098"
+          securityContext:
+            capabilities:
+              add:
+                - IPC_LOCK
+
