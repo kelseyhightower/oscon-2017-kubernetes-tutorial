@@ -6,3 +6,4 @@
 * [Deploy an Application](labs/02-tutorial-basics.md)
 * [The Hello World Challenge](labs/03-challenge-hello-world.md)
 * [Creating and Consuming Secrets](labs/04-tutorial-secrets.md)
+* [The Secret Challenge](labs/05-challege-secrets.md)
