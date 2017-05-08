@@ -34,9 +34,7 @@ Run the `secrets` job to fetch the secrets and log the secrets:
 kubectl create -f https://raw.githubusercontent.com/kelseyhightower/secrets/master/secrets.yaml
 ```
 
-```
-kubectl get jobs
-```
+View the logs of the `secrets` job:
 
 ```
 kubectl get pods -a
