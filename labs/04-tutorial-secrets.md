@@ -28,6 +28,12 @@ Describe the `oscon` secret:
 kubectl describe secrets oscon
 ```
 
+Run the `secrets` job to fetch the secrets and log the secrets:
+
+```
+kubectl create -f https://raw.githubusercontent.com/kelseyhightower/secrets/master/secrets.yaml
+```
+
 ## Managing Secrets with Vault
 
 In this tutorial you will deploy a Vault server running in dev mode.
