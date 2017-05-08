@@ -55,7 +55,7 @@ In this tutorial you will deploy a Vault server running in dev mode.
 ### Deploy a Vault Server
 
 ```
-kubectl create -f statefulsets/vault.yaml
+kubectl create -f https://raw.githubusercontent.com/kelseyhightower/oscon-2017-kubernetes-tutorial/master/statefulsets/vault.yaml
 ```
 
 ```
